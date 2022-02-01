@@ -5,16 +5,16 @@ const router = express.Router();
 //rutas
 
 router.get("/", (req, res) => {
-  res.send("index");
+  res.render("index");
 });
 
-// router.get("/about", (req, res) => {
-//   res.render("about");
-// });
+router.get("/players", (req, res) => {
+  res.render("players");
+});
 
-// router.get("/work", (req, res) => {
-//   res.render("work");
-// });
+router.get("/teams", (req, res) => {
+  res.render("teams");
+});
 
 // router.get("/gallery", (req, res) => {
 //   res.render("gallery");
